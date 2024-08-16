@@ -10,15 +10,10 @@ int main()
     int len = num.length();
 
     for (int i = 0; i < len; i++){
-        if (n == 10){
-            res = stoi(num);
-        }
-        else{
             if (num[i] >= 65)
                 res += (num[i] - 55) * pow(n, len - (i + 1));
             else
                 res += (num[i] - '0') * pow(n, len - (i + 1));
-        }
     }
 
     cout << res;
